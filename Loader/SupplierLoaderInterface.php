@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Product\Loader;
+namespace Xidea\Component\Supply\Loader;
 
 use Xidea\Component\Base\Loader\ObjectLoaderInterface;
 

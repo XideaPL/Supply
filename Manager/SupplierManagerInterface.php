@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Product\Manager;
+namespace Xidea\Component\Supply\Manager;
 
-use Xidea\Component\Product\Model\SupplierInterface;
+use Xidea\Component\Supply\Model\SupplierInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
