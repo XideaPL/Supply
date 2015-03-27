@@ -1,0 +1,30 @@
+{
+    "name": "xideapl/supply",
+    "type": "library",
+    "description": "Xidea Supply Component",
+    "keywords": [],
+    "homepage": "http://xidea.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artur Pszczółka",
+            "email": "artur.pszczolka@xidea.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "xideapl/base": "dev-master@dev"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-0": { "Xidea\\Component\\Supply": "" }
+    },
+    "target-dir": "Xidea/Component/Supply",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
