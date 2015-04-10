@@ -15,9 +15,14 @@ namespace Xidea\Component\Supply\Model;
 abstract class AbstractSupplier implements SupplierInterface
 {
     /*
-     * @var int
+     * @var mixed
      */
     protected $id;
+    
+    /*
+     * @var string
+     */
+    protected $symbol;
     
     /*
      * @var string
@@ -30,6 +35,22 @@ abstract class AbstractSupplier implements SupplierInterface
     public function getId()
     {
         return $this->id;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function setSymbol($symbol)
+    {
+        $this->symbol = $symbol;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getSymbol()
+    {
+        return $this->symbol;
     }
     
     /**

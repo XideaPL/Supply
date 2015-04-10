@@ -17,21 +17,35 @@ interface SupplierInterface
     /**
      * Returns the id.
      * 
-     * @return string The id
+     * @return mixed The id
      */
-    public function getId();
+    function getId();
 
+    /**
+     * Sets the symbol.
+     *
+     * @param string $symbol
+     */
+    function setSymbol($symbol);
+    
+    /**
+     * Returns the symbol.
+     *
+     * @return string
+     */
+    function getSymbol();
+    
     /**
      * Sets the name.
      *
      * @param string $name
      */
-    public function setName($name);
+    function setName($name);
     
     /**
      * Returns the name.
      *
      * @return string
      */
-    public function getName();
+    function getName();
 }

@@ -12,7 +12,7 @@ namespace Xidea\Component\Supply\Model;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface ProductInterface
+interface ManufacturerInterface
 {
     /**
      * Returns the id.
@@ -20,13 +20,6 @@ interface ProductInterface
      * @return mixed The id
      */
     function getId();
-
-    /**
-     * Returns the sku.
-     *
-     * @return string
-     */
-    function getSku();
     
     /**
      * Returns the name.
