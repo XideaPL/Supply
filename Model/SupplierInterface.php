@@ -48,4 +48,18 @@ interface SupplierInterface
      * @return string
      */
     function getName();
+    
+    /**
+     * Returns the supplier items.
+     *
+     * @return array
+     */
+    function getItems();
+    
+    /**
+     * Adds the supplier item.
+     * 
+     * @param SupplierItemInterface $item
+     */
+    function addItem(SupplierItemInterface $item);
 }

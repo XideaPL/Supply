@@ -29,6 +29,11 @@ abstract class AbstractSupplier implements SupplierInterface
      */
     protected $name;
     
+    /*
+     * @var array
+     */
+    protected $items;
+    
     /**
      * @inheritDoc
      */
@@ -67,5 +72,21 @@ abstract class AbstractSupplier implements SupplierInterface
     public function getName()
     {
         return $this->name;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function getItems()
+    {
+        return $this->items;
+    }
+    
+    /**
+     * @inheritDoc
+     */
+    public function addItem(SupplierItemInterface $item)
+    {
+        $this->items[] = $item;
     }
 }
