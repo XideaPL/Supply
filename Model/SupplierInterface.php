@@ -54,12 +54,12 @@ interface SupplierInterface
      *
      * @return array
      */
-    function getItems();
+    function getSupplierItems();
     
     /**
      * Adds the supplier item.
      * 
-     * @param SupplierItemInterface $item
+     * @param SupplierItemInterface $supplierItem
      */
-    function addItem(SupplierItemInterface $item);
+    function addSupplierItem(SupplierItemInterface $supplierItem);
 }
