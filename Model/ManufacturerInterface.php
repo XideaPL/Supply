@@ -27,18 +27,4 @@ interface ManufacturerInterface
      * @return string
      */
     function getName();
-    
-    /**
-     * Returns the supplier items.
-     *
-     * @return array
-     */
-    function getSupplierItems();
-    
-    /**
-     * Adds the supplier item.
-     * 
-     * @param SupplierItemInterface $supplierItem
-     */
-    function addSupplierItem(SupplierItemInterface $supplierItem);
 }
