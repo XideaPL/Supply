@@ -11,6 +11,7 @@ namespace Xidea\Component\Supply\Loader;
 
 use Xidea\Component\Base\Loader\ModelLoaderInterface;
 use Xidea\Component\Supply\Model\SupplierInterface,
+    Xidea\Component\Supply\Model\ManufacturerInterface,
     Xidea\Component\Supply\Model\ProductInterface;
 
 /**
@@ -31,7 +32,17 @@ interface SupplierItemLoaderInterface extends ModelLoaderInterface
      * Returns items.
      * 
      * @param SupplierInterface $supplier
-     * @param ProductInterface
+     * @param ManufacturerInterface $manufacturer
+     * 
+     * @return array
+     */
+    function loadOneBySupplierAndManufacturer(SupplierInterface $supplier, ManufacturerInterface $manufacturer);
+    
+    /**
+     * Returns items.
+     * 
+     * @param SupplierInterface $supplier
+     * @param ProductInterface $product
      * 
      * @return array
      */
