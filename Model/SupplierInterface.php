@@ -62,4 +62,11 @@ interface SupplierInterface
      * @param SupplierItemInterface $supplierItem
      */
     function addSupplierItem(SupplierItemInterface $supplierItem);
+    
+    /**
+     * Removes the supplier item.
+     * 
+     * @param SupplierItemInterface $supplierItem
+     */
+    function removeSupplierItem(SupplierItemInterface $supplierItem);
 }

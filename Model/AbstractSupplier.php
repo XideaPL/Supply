@@ -89,4 +89,16 @@ abstract class AbstractSupplier implements SupplierInterface
     {
         $this->supplierItems[] = $supplierItem;
     }
+    
+    /**
+     * @inheritDoc
+     */
+    public function removeSupplierItem(SupplierItemInterface $supplierItem)
+    {
+        foreach($this->supplierItems as $key => $item) {
+            if($item === $supplierItem) {
+                unset($this->supplierItems[$key]);
+            }
+        }
+    }
 }
