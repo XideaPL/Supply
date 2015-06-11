@@ -14,14 +14,14 @@ use Xidea\Component\Base\Loader\ModelLoaderInterface;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface SupplierLoaderInterface extends ModelLoaderInterface
+interface ManufacturerLoaderInterface extends ModelLoaderInterface
 {
     /**
      * Returns a supplier by id.
      * 
      * @param int $id
      * 
-     * @return \Xidea\Component\Supply\Model\SupplierInterface
+     * @return \Xidea\Component\Supply\Model\ManufacturerInterface
      */
     function load($id);
 }

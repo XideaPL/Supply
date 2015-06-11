@@ -24,7 +24,7 @@ interface SupplierItemLoaderInterface extends ModelLoaderInterface
      * 
      * @param int $id
      * 
-     * @return \Xidea\Component\Product\Model\SupplierItemInterface
+     * @return \Xidea\Component\Supply\Model\SupplierItemInterface
      */
     function load($id);
     
