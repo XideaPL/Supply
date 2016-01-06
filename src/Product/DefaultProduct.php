@@ -7,12 +7,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Supply\Model;
+namespace Xidea\Supply\Product;
+
+use Xidea\Supply\ProductInterface;
+use Xidea\Supply\SupplierItemInterface;
 
 /**
- * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class AbstractSupplier implements SupplierInterface
+class DefaultProduct implements ProductInterface
 {
     /*
      * @var mixed
@@ -22,7 +24,7 @@ abstract class AbstractSupplier implements SupplierInterface
     /*
      * @var string
      */
-    protected $symbol;
+    protected $sku;
     
     /*
      * @var string
@@ -32,7 +34,7 @@ abstract class AbstractSupplier implements SupplierInterface
     /*
      * @var array
      */
-    protected $supplierItems;
+    protected $supplierItems = [];
     
     /**
      * @inheritDoc
@@ -45,17 +47,17 @@ abstract class AbstractSupplier implements SupplierInterface
     /**
      * @inheritDoc
      */
-    public function setSymbol($symbol)
+    public function setSku($sku)
     {
-        $this->symbol = $symbol;
+        $this->sku = $sku;
     }
     
     /**
      * @inheritDoc
      */
-    public function getSymbol()
+    public function getSku()
     {
-        return $this->symbol;
+        return $this->sku;
     }
     
     /**

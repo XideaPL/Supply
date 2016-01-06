@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Supply\Loader;
+namespace Xidea\Supply\Manufacturer;
 
-use Xidea\Component\Base\Loader\ModelLoaderInterface;
+use Xidea\Base\Model\LoaderInterface as ModelLoaderInterface;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
@@ -21,7 +21,7 @@ interface ManufacturerLoaderInterface extends ModelLoaderInterface
      * 
      * @param int $id
      * 
-     * @return \Xidea\Component\Supply\Model\ManufacturerInterface
+     * @return \Xidea\Supply\ManufacturerInterface
      */
     function load($id);
 }

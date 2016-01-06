@@ -1,7 +1,7 @@
 {
     "name": "xideapl/supply",
     "type": "library",
-    "description": "Xidea Supply Component",
+    "description": "Xidea Supply",
     "keywords": [],
     "homepage": "http://xidea.pl",
     "license": "MIT",
@@ -16,12 +16,11 @@
         "xideapl/base": "dev-master@dev"
     },
     "require-dev": {
+        "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "psr-0": { "Xidea\\Component\\Supply": "" }
+        "psr-4": { "Xidea\\Supply\\": "src/" }
     },
-    "target-dir": "Xidea/Component/Supply",
-    "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"

@@ -7,12 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Supply;
+namespace Xidea\Supply\Supplier;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-abstract class SupplierEvents
+abstract class Events
 {
     /**
      * The PRE_SAVE event occurs when the supplier is saved.
@@ -40,9 +40,9 @@ abstract class SupplierEvents
     const CREATE_SUCCESS = 'xidea_supply.supplier.create_success';
     
     /**
-     * The CREATE_FORM_VALID event occurs when the create process is initialized.
+     * The FORM_VALID event occurs when the create process is initialized.
      */
-    const CREATE_FORM_VALID = 'xidea_supply.supplier.create_form_valid';
+    const FORM_VALID = 'xidea_supply.supplier.form_valid';
     
     /**
      * The CREATE_COMPLETED event occurs when the create process is initialized.

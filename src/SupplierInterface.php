@@ -7,12 +7,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Xidea\Component\Supply\Model;
+namespace Xidea\Supply;
 
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface ProductInterface
+interface SupplierInterface
 {
     /**
      * Returns the id.
@@ -22,11 +22,25 @@ interface ProductInterface
     function getId();
 
     /**
-     * Returns the sku.
+     * Sets the symbol.
+     *
+     * @param string $symbol
+     */
+    function setSymbol($symbol);
+    
+    /**
+     * Returns the symbol.
      *
      * @return string
      */
-    function getSku();
+    function getSymbol();
+    
+    /**
+     * Sets the name.
+     *
+     * @param string $name
+     */
+    function setName($name);
     
     /**
      * Returns the name.
