@@ -14,7 +14,7 @@ use Xidea\Supply\SupplierInterface;
 /**
  * @author Artur Pszczółka <a.pszczolka@xidea.pl>
  */
-interface SupplierManagerInterface
+interface ManagerInterface
 {
     /**
      * Saves a supplier.
